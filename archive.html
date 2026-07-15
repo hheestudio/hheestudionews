@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>지난 편지 — hhee studio letter</title>
+  <meta name="description" content="hhee studio letter가 지금까지 보낸 편지들. 과정 노트, 아이디어의 출처, 실패의 기록, 도구와 방법." />
+  <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ═══════════ 헤더 ═══════════ -->
+  <header class="header scrolled" id="header">
+    <a class="masthead" href="index.html">
+      <span class="masthead-main">hhee studio</span>
+      <span class="masthead-sub">letter</span>
+    </a>
+    <nav class="header-nav">
+      <a href="index.html#about" class="nav-link">소개</a>
+      <a href="archive.html" class="nav-link">지난 편지</a>
+      <a href="index.html#subscribe" class="btn-subscribe magnetic">구독하기</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="메뉴 열기">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html#about">소개</a>
+    <a href="archive.html">지난 편지</a>
+    <a href="index.html#subscribe">구독하기</a>
+  </div>
+
+  <main class="archive">
+
+    <header class="archive-head">
+      <p class="section-index">( 아카이브 )</p>
+      <h1 class="archive-title">지난 편지들</h1>
+      <p class="archive-lead">
+        격주 금요일마다 도착한 편지들을 모았습니다.<br />
+        과정과 실패, 아이디어의 출처를 주제별로 둘러보세요.
+      </p>
+    </header>
+
+    <!-- 태그 필터 -->
+    <div class="filter-bar" id="filter-bar" role="tablist" aria-label="주제 필터">
+      <button class="filter-chip is-active" data-filter="all">전체</button>
+      <button class="filter-chip" data-filter="process">과정 노트</button>
+      <button class="filter-chip" data-filter="source">아이디어의 출처</button>
+      <button class="filter-chip" data-filter="fail">실패의 기록</button>
+      <button class="filter-chip" data-filter="tool">도구와 방법</button>
+    </div>
+
+    <!-- 편지 그리드 -->
+    <div class="archive-grid" id="archive-grid">
+
+      <a class="archive-card reveal" data-tag="source" href="letter.html">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <line x1="60" y1="34" x2="140" y2="34" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="76" y1="34" x2="76" y2="52" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="124" y1="34" x2="124" y2="52" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="52" y="52" width="96" height="64" rx="3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M70 74 L130 74 M70 90 L112 90" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+            <path d="M148 108 L156 116" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+          </svg>
+          <span class="archive-tag">#아이디어의출처</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">Vol. 01 · 2026.07.17</span>
+          <h2 class="archive-name">아이디어가 시작되는 순간</h2>
+          <span class="archive-more">읽어보기 →</span>
+        </div>
+      </a>
+
+      <a class="archive-card reveal is-coming" data-tag="source" href="index.html#subscribe">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <rect x="86" y="30" width="28" height="100" rx="6" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M100 80 L148 80 Q156 80 156 88 L156 96" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="100" cy="80" r="9" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <span class="archive-tag">#아이디어의출처</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">Vol. 02 · 준비 중</span>
+          <h2 class="archive-name">문 손잡이에서 배운 것, 손이 기억하는 디자인</h2>
+          <span class="archive-more">곧 도착</span>
+        </div>
+      </a>
+
+      <a class="archive-card reveal is-coming" data-tag="process" href="index.html#subscribe">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <path d="M60 130 L60 60 Q60 48 72 48 L128 48 Q140 48 140 60 L140 130" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="60" y1="88" x2="140" y2="88" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="66" y1="130" x2="62" y2="146" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="134" y1="130" x2="138" y2="146" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="100" cy="68" r="3" fill="currentColor" opacity="0.5"/>
+          </svg>
+          <span class="archive-tag">#과정노트</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">Vol. 03 · 준비 중</span>
+          <h2 class="archive-name">의자 다리 하나를 삼 주 동안 그린 이유</h2>
+          <span class="archive-more">곧 도착</span>
+        </div>
+      </a>
+
+      <a class="archive-card reveal is-coming" data-tag="fail" href="index.html#subscribe">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <rect x="52" y="44" width="72" height="92" rx="2" stroke="currentColor" stroke-width="1.5" transform="rotate(-6 88 90)"/>
+            <rect x="70" y="36" width="72" height="92" rx="2" stroke="currentColor" stroke-width="1.5" transform="rotate(3 106 82)" opacity="0.65"/>
+            <path d="M84 70 L120 70 M84 84 L124 84 M84 98 L112 98" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+          </svg>
+          <span class="archive-tag">#실패의기록</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">Vol. 04 · 준비 중</span>
+          <h2 class="archive-name">버린 시안 열두 장, 남긴 시안 한 장</h2>
+          <span class="archive-more">곧 도착</span>
+        </div>
+      </a>
+
+      <a class="archive-card reveal is-coming" data-tag="tool" href="index.html#subscribe">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <path d="M70 60 L110 100 M60 70 L100 110" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="52" y="52" width="26" height="26" rx="4" stroke="currentColor" stroke-width="1.5" transform="rotate(45 65 65)"/>
+            <path d="M108 98 L138 128 Q142 132 138 136 Q134 140 130 136 L100 106" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <span class="archive-tag">#도구와방법</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">준비 중 · 2026.07.04</span>
+          <h2 class="archive-name">파일 이름 짓는 법을 삼 년째 고치는 중</h2>
+          <span class="archive-more">곧 도착</span>
+        </div>
+      </a>
+
+      <a class="archive-card reveal is-coming" data-tag="process" href="index.html#subscribe">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <circle cx="100" cy="82" r="42" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="100" cy="82" r="24" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+            <path d="M100 40 L100 30 M100 124 L100 134 M58 82 L48 82 M142 82 L152 82" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <span class="archive-tag">#과정노트</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">준비 중 · 2026.07.18</span>
+          <h2 class="archive-name">둥근 모서리는 왜 그렇게 어려운가</h2>
+          <span class="archive-more">곧 도착</span>
+        </div>
+      </a>
+
+      <a class="archive-card reveal is-coming" data-tag="source" href="index.html#subscribe">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <path d="M64 118 Q64 60 100 52 Q136 60 136 118 Z" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M100 52 L100 118" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+            <circle cx="100" cy="44" r="6" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <span class="archive-tag">#아이디어의출처</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">준비 중 · 2026.08.01</span>
+          <h2 class="archive-name">오래된 공구함이 알려준 정리의 원칙</h2>
+          <span class="archive-more">곧 도착</span>
+        </div>
+      </a>
+
+    </div>
+
+    <p class="archive-empty" id="archive-empty" hidden>이 주제의 편지는 아직 없어요. 곧 채워질 거예요.</p>
+
+  </main>
+
+  <!-- ═══════════ 구독 CTA ═══════════ -->
+  <section class="subscribe" id="subscribe">
+    <p class="section-index reveal">( 편지, 계속 받기 )</p>
+    <h2 class="subscribe-title reveal">
+      새 편지가 도착하면<br /><em>가장 먼저 만나요.</em>
+    </h2>
+
+    <form class="subscribe-form reveal" id="subscribe-form" novalidate>
+      <div class="field">
+        <input type="email" id="email" name="email" placeholder="이메일 주소" autocomplete="email" required />
+        <span class="field-line" aria-hidden="true"></span>
+      </div>
+      <button type="submit" class="btn-submit magnetic">
+        <span class="btn-submit-label">편지 받기</span>
+        <span class="btn-submit-arrow" aria-hidden="true">→</span>
+      </button>
+    </form>
+
+    <div class="subscribe-done" id="subscribe-done" hidden>
+      <svg class="done-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <circle cx="32" cy="32" r="29" stroke="currentColor" stroke-width="1.5" class="done-circle"/>
+        <path d="M20 33 L28.5 41.5 L45 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="done-check"/>
+      </svg>
+      <p class="done-title">환영합니다.</p>
+      <p class="done-sub">다음 격주 금요일, 첫 편지에서 만나요.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer-big" aria-hidden="true">hhee studio</p>
+    <div class="footer-row">
+      <span>물건과 과정 사이 어딘가에서.</span>
+      <span>© 2026 hhee studio</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

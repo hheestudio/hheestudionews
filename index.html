@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hhee studio letter — 아이디어가 물건이 되기까지</title>
+  <meta name="description" content="제품 디자이너 hhee가 격주로 보내는 과정의 기록. 스케치, 실패, 아이디어의 출처, 그리고 그 사이의 결정들." />
+  <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 종이 질감 오버레이 -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ═══════════ 헤더 ═══════════ -->
+  <header class="header" id="header">
+    <a class="masthead" href="#top">
+      <span class="masthead-main">hhee studio</span>
+      <span class="masthead-sub">letter</span>
+    </a>
+    <nav class="header-nav">
+      <a href="#about" class="nav-link">소개</a>
+      <a href="archive.html" class="nav-link">지난 편지</a>
+      <a href="#subscribe" class="btn-subscribe magnetic">구독하기</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="메뉴 열기">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about">소개</a>
+    <a href="archive.html">지난 편지</a>
+    <a href="#subscribe">구독하기</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ═══════════ 히어로 ═══════════ -->
+    <section class="hero">
+      <div class="hero-meta">
+        <span class="hero-meta-item">제품 디자인 · 과정의 기록</span>
+        <span class="hero-meta-divider" aria-hidden="true"></span>
+        <span class="hero-meta-item">격주 금요일 발행</span>
+      </div>
+
+      <h1 class="hero-title" aria-label="아이디어가 물건이 되기까지, 그 사이의 모든 기록.">
+        <span class="line"><span class="line-inner">아이디어가</span></span>
+        <span class="line"><span class="line-inner">물건이 되기까지,</span></span>
+        <span class="line"><span class="line-inner">그 사이의 <em>모든 기록.</em></span></span>
+      </h1>
+
+      <div class="hero-bottom">
+        <p class="hero-sub">
+          완성된 제품은 매끈하지만, 과정은 그렇지 않아요.<br />
+          지워진 스케치와 버려진 시안, 그리고 그 사이의 작은 결정들 —<br />
+          hhee studio가 만드는 것들의 <strong>뒷면</strong>을 편지로 보냅니다.
+        </p>
+        <div class="hero-now">
+          <span class="hero-now-label">요즘 들여다보는 것</span>
+          <span class="rotator" id="rotator">
+            <span class="rotator-word is-active">의자의 다리</span>
+            <span class="rotator-word">문 손잡이의 온도</span>
+            <span class="rotator-word">종이의 결</span>
+            <span class="rotator-word">오래된 공구함</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- 블루프린트 오너먼트 -->
+      <svg class="hero-ornament" data-speed="-0.09" viewBox="0 0 320 320" fill="none" aria-hidden="true">
+        <circle cx="160" cy="160" r="150" stroke="currentColor" stroke-width="1" stroke-dasharray="4 7" class="orbit" />
+        <circle cx="160" cy="160" r="104" stroke="currentColor" stroke-width="1" opacity="0.5" />
+        <line x1="160" y1="10" x2="160" y2="46" stroke="currentColor" stroke-width="1" />
+        <line x1="160" y1="274" x2="160" y2="310" stroke="currentColor" stroke-width="1" />
+        <line x1="10" y1="160" x2="46" y2="160" stroke="currentColor" stroke-width="1" />
+        <line x1="274" y1="160" x2="310" y2="160" stroke="currentColor" stroke-width="1" />
+        <path d="M120 200 L120 128 L200 128 L200 200" stroke="currentColor" stroke-width="1.2" />
+        <line x1="108" y1="200" x2="212" y2="200" stroke="currentColor" stroke-width="1.2" />
+        <text x="160" y="230" text-anchor="middle" class="ornament-caption">fig.01 — process</text>
+      </svg>
+
+      <a class="scroll-cue" href="#about" aria-label="아래로 스크롤">
+        <span class="scroll-cue-line" aria-hidden="true"></span>
+        <span class="scroll-cue-text">스크롤</span>
+      </a>
+    </section>
+
+    <!-- ═══════════ 마키 ═══════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-content">
+          과정 process&nbsp;&nbsp;·&nbsp;&nbsp;사물 object&nbsp;&nbsp;·&nbsp;&nbsp;기록 record&nbsp;&nbsp;·&nbsp;&nbsp;실패 failure&nbsp;&nbsp;·&nbsp;&nbsp;출처 source&nbsp;&nbsp;·&nbsp;&nbsp;
+        </span>
+        <span class="marquee-content">
+          과정 process&nbsp;&nbsp;·&nbsp;&nbsp;사물 object&nbsp;&nbsp;·&nbsp;&nbsp;기록 record&nbsp;&nbsp;·&nbsp;&nbsp;실패 failure&nbsp;&nbsp;·&nbsp;&nbsp;출처 source&nbsp;&nbsp;·&nbsp;&nbsp;
+        </span>
+      </div>
+    </div>
+
+    <!-- ═══════════ 매니페스토 ═══════════ -->
+    <section class="manifesto" id="about">
+      <p class="section-index reveal">( 01 — 왜 쓰는가 )</p>
+      <div class="manifesto-body">
+        <p class="scrub-line">영감은 하늘에서 떨어지지 않습니다.</p>
+        <p class="scrub-line">책상 위의 사물, 길에서 주운 장면,</p>
+        <p class="scrub-line">손에 쥐었을 때의 무게 같은 —</p>
+        <p class="scrub-line">아이디어의 출처는 언제나 <em>구체적</em>입니다.</p>
+        <p class="scrub-line">그 출처들을 모아, 격주에 한 번 편지로 씁니다.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════ 장면 콜라주 ═══════════ -->
+    <section class="collage" aria-label="요즘의 장면들">
+      <p class="collage-label reveal">요즘의 장면들 — 2026 여름</p>
+
+      <div class="collage-grid">
+        <figure class="collage-item item-a">
+          <div class="collage-img">
+            <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?q=80&w=1200&auto=format&fit=crop" alt="작업실에서 나무를 다듬는 손" loading="lazy" />
+          </div>
+          <figcaption class="collage-caption">→ 작업대 위의 아침</figcaption>
+        </figure>
+
+        <figure class="collage-item item-b">
+          <div class="collage-img">
+            <img src="https://images.unsplash.com/photo-1611241893603-3c359704e0ee?q=80&w=1000&auto=format&fit=crop" alt="책상 위의 스케치" loading="lazy" />
+          </div>
+          <figcaption class="collage-caption">→ 스케치, 버전 셋</figcaption>
+        </figure>
+
+        <figure class="collage-item item-c">
+          <div class="collage-img">
+            <img src="https://images.unsplash.com/photo-1595351298020-038700609878?q=80&w=800&auto=format&fit=crop" alt="도자기 그릇" loading="lazy" />
+          </div>
+        </figure>
+
+        <figure class="collage-item item-d">
+          <div class="collage-img">
+            <img src="https://images.unsplash.com/photo-1498075702571-ecb018f3752d?q=80&w=800&auto=format&fit=crop" alt="작업 도구들" loading="lazy" />
+          </div>
+        </figure>
+
+        <figure class="collage-item item-e">
+          <div class="collage-img">
+            <img src="https://images.unsplash.com/photo-1609881583302-61548332039c?q=80&w=1200&auto=format&fit=crop" alt="흙을 빚는 손" loading="lazy" />
+          </div>
+          <figcaption class="collage-caption">→ 굽기 전의 형태</figcaption>
+        </figure>
+
+        <span class="collage-word word-1" data-speed="-0.06" aria-hidden="true">만들며,</span>
+        <span class="collage-word word-2" data-speed="0.08" aria-hidden="true">#과정의기록</span>
+      </div>
+    </section>
+
+    <!-- ═══════════ 받게 되는 것 ═══════════ -->
+    <section class="contents-section">
+      <p class="section-index reveal">( 02 — 받게 되는 것 )</p>
+      <h2 class="section-title reveal">편지 한 통에<br />담기는 것들</h2>
+
+      <ul class="content-list">
+        <li class="content-row reveal">
+          <span class="content-num">01</span>
+          <div class="content-text">
+            <h3 class="content-name">과정 노트</h3>
+            <p class="content-desc">지금 진행 중인 프로젝트의 스케치와 시행착오, 결정의 이유. 완성되기 전의 날것 그대로.</p>
+          </div>
+          <span class="content-arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="content-row reveal">
+          <span class="content-num">02</span>
+          <div class="content-text">
+            <h3 class="content-name">아이디어의 출처</h3>
+            <p class="content-desc">이번 호에 나를 움직인 사물·공간·장면 세 가지. 어디서 왔고, 무엇을 남겼는지.</p>
+          </div>
+          <span class="content-arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="content-row reveal">
+          <span class="content-num">03</span>
+          <div class="content-text">
+            <h3 class="content-name">실패의 기록</h3>
+            <p class="content-desc">버려진 시안과, 버린 이유. 실패도 과정의 일부라서 숨기지 않고 씁니다.</p>
+          </div>
+          <span class="content-arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="content-row reveal">
+          <span class="content-num">04</span>
+          <div class="content-text">
+            <h3 class="content-name">도구와 방법</h3>
+            <p class="content-desc">실제로 쓰는 도구, 파일을 정리하는 법, 작업의 루틴. 내일 바로 써먹을 수 있게 구체적으로.</p>
+          </div>
+          <span class="content-arrow" aria-hidden="true">→</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ═══════════ 지난 편지 ═══════════ -->
+    <section class="letters" id="letters">
+      <p class="section-index reveal">( 03 — 지난 편지 )</p>
+      <h2 class="section-title reveal">이런 편지들이<br />도착했어요</h2>
+
+      <div class="letter-grid">
+        <a class="letter-card reveal" href="letter.html">
+          <div class="letter-visual">
+            <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+              <line x1="60" y1="34" x2="140" y2="34" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="76" y1="34" x2="76" y2="52" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="124" y1="34" x2="124" y2="52" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="52" y="52" width="96" height="64" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M70 74 L130 74 M70 90 L112 90" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+              <path d="M148 108 L156 116" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+            </svg>
+            <span class="letter-tag">#아이디어의출처</span>
+          </div>
+          <div class="letter-info">
+            <span class="letter-vol">Vol. 01 — 아이디어의 출처</span>
+            <h3 class="letter-title">아이디어가<br />시작되는 순간</h3>
+          </div>
+        </a>
+
+        <a class="letter-card reveal is-coming" href="index.html#subscribe">
+          <div class="letter-visual">
+            <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+              <rect x="86" y="30" width="28" height="100" rx="6" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M100 74 L100 86" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M100 80 L148 80 Q156 80 156 88 L156 96" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="100" cy="80" r="9" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M60 140 L140 140" stroke="currentColor" stroke-width="1" stroke-dasharray="3 5" opacity="0.5"/>
+            </svg>
+            <span class="letter-tag">#아이디어의출처</span>
+          </div>
+          <div class="letter-info">
+            <span class="letter-vol">Vol. 02 — 준비 중</span>
+            <h3 class="letter-title">문 손잡이에서 배운 것,<br />손이 기억하는 디자인</h3>
+          </div>
+        </a>
+
+        <a class="letter-card reveal is-coming" href="index.html#subscribe">
+          <div class="letter-visual">
+            <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+              <rect x="52" y="44" width="72" height="92" rx="2" stroke="currentColor" stroke-width="1.5" transform="rotate(-6 88 90)"/>
+              <rect x="70" y="36" width="72" height="92" rx="2" stroke="currentColor" stroke-width="1.5" transform="rotate(3 106 82)" opacity="0.65"/>
+              <path d="M84 70 L120 70 M84 84 L124 84 M84 98 L112 98" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+              <path d="M140 46 L156 30 M148 46 L160 34" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+            </svg>
+            <span class="letter-tag">#실패의기록</span>
+          </div>
+          <div class="letter-info">
+            <span class="letter-vol">Vol. 03 — 준비 중</span>
+            <h3 class="letter-title">버린 시안 열두 장,<br />남긴 시안 한 장</h3>
+          </div>
+        </a>
+      </div>
+
+      <a class="letters-all reveal" href="archive.html">지난 편지 전체 보기 →</a>
+    </section>
+
+    <!-- ═══════════ 구독 ═══════════ -->
+    <section class="subscribe" id="subscribe">
+      <p class="section-index reveal">( 04 — 구독 )</p>
+      <h2 class="subscribe-title reveal">
+        한 달에 두 번,<br />메일함에서 <em>만나요.</em>
+      </h2>
+
+      <form class="subscribe-form reveal" id="subscribe-form" novalidate>
+        <div class="field">
+          <input type="email" id="email" name="email" placeholder="이메일 주소" autocomplete="email" required />
+          <span class="field-line" aria-hidden="true"></span>
+        </div>
+        <button type="submit" class="btn-submit magnetic">
+          <span class="btn-submit-label">편지 받기</span>
+          <span class="btn-submit-arrow" aria-hidden="true">→</span>
+        </button>
+      </form>
+
+      <div class="subscribe-done" id="subscribe-done" hidden>
+        <svg class="done-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="32" r="29" stroke="currentColor" stroke-width="1.5" class="done-circle"/>
+          <path d="M20 33 L28.5 41.5 L45 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="done-check"/>
+        </svg>
+        <p class="done-title">환영합니다.</p>
+        <p class="done-sub">다음 격주 금요일, 첫 편지에서 만나요.</p>
+      </div>
+
+      <p class="subscribe-note reveal">
+        스팸은 없어요. 편지가 가끔 뜸해질 수는 있어도, 주소를 팔지는 않습니다.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ═══════════ 푸터 ═══════════ -->
+  <footer class="footer">
+    <p class="footer-big" aria-hidden="true">hhee studio</p>
+    <div class="footer-row">
+      <span>물건과 과정 사이 어딘가에서.</span>
+      <span>© 2026 hhee studio</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

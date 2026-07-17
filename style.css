@@ -3,13 +3,13 @@
    ═══════════════════════════════════════════ */
 
 :root {
-  --paper: #f5efe4;
-  --paper-deep: #ece2cf;
-  --ink: #26201a;
-  --ink-soft: #746a5c;
-  --accent: #bf4f2c;
-  --line: rgba(38, 32, 26, 0.16);
-  --line-strong: rgba(38, 32, 26, 0.35);
+  --paper: #edebe6;
+  --paper-deep: #f3d765;
+  --ink: #17130f;
+  --ink-soft: #5b5650;
+  --accent: var(--ink);
+  --line: rgba(23, 19, 15, 0.16);
+  --line-strong: rgba(23, 19, 15, 0.35);
   --serif: 'MaruBuri', 'Noto Serif KR', serif;
   --sans: 'Pretendard Variable', Pretendard, -apple-system, sans-serif;
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
@@ -32,9 +32,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-::selection { background: var(--accent); color: var(--paper); }
+::selection { background: var(--paper-deep); color: var(--ink); }
 
-em { font-style: normal; color: var(--accent); }
+em {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--paper-deep);
+  padding: 0.03em 0.32em;
+  border-radius: 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
 
 /* ── 종이 질감 ─────────────────────────── */
 .grain {
@@ -133,10 +142,10 @@ em { font-style: normal; color: var(--accent); }
   text-decoration: none;
   padding: 9px 22px;
   border-radius: 100px;
-  transition: background 0.3s;
+  transition: background 0.3s, color 0.3s;
   will-change: transform;
 }
-.btn-subscribe:hover { background: var(--accent); }
+.btn-subscribe:hover { background: var(--paper-deep); color: var(--ink); }
 
 /* ── 모바일 메뉴 ───────────────────────── */
 .menu-toggle {
@@ -194,7 +203,9 @@ em { font-style: normal; color: var(--accent); }
 .mobile-menu.is-open a { opacity: 1; transform: translateY(0); }
 .mobile-menu.is-open a:nth-child(1) { transition-delay: 0.15s; }
 .mobile-menu.is-open a:nth-child(2) { transition-delay: 0.22s; }
-.mobile-menu.is-open a:nth-child(3) { transition-delay: 0.29s; color: var(--accent); }
+.mobile-menu.is-open a:nth-child(3) { transition-delay: 0.29s; }
+.mobile-menu.is-open a:nth-child(4) { transition-delay: 0.36s; }
+.mobile-menu.is-open a:last-child { color: var(--accent); }
 
 /* ── 읽기 진행 바 ──────────────────────── */
 .read-progress {
@@ -760,10 +771,10 @@ em { font-style: normal; color: var(--accent); }
   padding: 15px 34px;
   border-radius: 100px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s, color 0.3s;
   will-change: transform;
 }
-.btn-submit:hover { background: var(--accent); }
+.btn-submit:hover { background: var(--paper-deep); color: var(--ink); }
 .btn-submit-arrow {
   display: inline-block;
   transition: transform 0.4s var(--ease-out);
@@ -1108,6 +1119,11 @@ em { font-style: normal; color: var(--accent); }
   background: var(--ink);
   color: var(--paper);
   border-color: var(--ink);
+}
+.chip-num {
+  opacity: 0.5;
+  font-variant-numeric: tabular-nums;
+  margin-right: 2px;
 }
 
 .archive-grid {

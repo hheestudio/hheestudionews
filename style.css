@@ -299,7 +299,7 @@ em { font-style: normal; color: var(--accent); }
   font-family: var(--serif);
   font-size: 1.15rem;
   color: var(--accent);
-  min-width: 12em;
+  min-width: 13em;
 }
 .rotator-word {
   position: absolute;
@@ -590,6 +590,20 @@ em { font-style: normal; color: var(--accent); }
 .content-row:hover .content-arrow {
   opacity: 1;
   transform: translateX(0);
+}
+
+/* ── 워크숍 ───────────────────────────── */
+.workshop-lead {
+  font-size: clamp(0.95rem, 1.4vw, 1.08rem);
+  color: var(--ink-soft);
+  line-height: 1.9;
+  max-width: 640px;
+  margin-bottom: clamp(40px, 6vh, 64px);
+}
+.workshop-note {
+  margin-top: clamp(28px, 4vh, 48px);
+  font-size: 0.84rem;
+  color: var(--ink-soft);
 }
 
 /* ── 지난 편지 ─────────────────────────── */

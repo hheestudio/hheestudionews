@@ -211,6 +211,16 @@ if (filterBar && archiveGrid) {
     });
     if (empty) empty.hidden = visible > 0;
   });
+
+  // URL 해시(#process 등)로 진입하면 해당 필터를 바로 적용
+  const applyHashFilter = () => {
+    const tag = location.hash.slice(1);
+    if (!tag) return;
+    const chip = filterBar.querySelector(`.filter-chip[data-filter="${CSS.escape(tag)}"]`);
+    if (chip) chip.click();
+  };
+  applyHashFilter();
+  window.addEventListener('hashchange', applyHashFilter);
 }
 
 // ── 읽기 진행 바 (아티클) ────────────────

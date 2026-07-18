@@ -549,6 +549,12 @@ em {
   border-top: 1px solid var(--line);
 }
 .content-list { list-style: none; }
+a.content-row {
+  display: grid;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
 .content-row {
   display: grid;
   grid-template-columns: 80px 1fr auto;

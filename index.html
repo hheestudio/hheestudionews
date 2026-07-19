@@ -3,33 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>hhee studio letter — 좋아서 자꾸 들여다보고, 자꾸 만듭니다</title>
-  <meta name="description" content="제품 디자이너 hhee가 격주로 보내는 과정의 기록. 스케치, 실패, 아이디어의 출처, 그리고 그 사이의 결정들." />
+  <title>hhee studio — 좋아서 만든 나의 취향</title>
+  <meta name="description" content="좋아서 만든 나의 취향, 여기에서 살 수 있습니다. 편지에 쓰던 것들이 물건이 되면 여기에 올려둡니다. 결제는 네이버 스마트스토어에서." />
   <link rel="canonical" href="https://studiohhee.com/" />
   <meta property="og:url" content="https://studiohhee.com/" />
-  <meta property="og:title" content="hhee studio letter — 좋아서 자꾸 들여다보고, 자꾸 만듭니다" />
-  <meta property="og:description" content="제품 디자이너 hhee가 격주로 보내는 과정의 기록. 스케치, 실패, 아이디어의 출처, 그리고 그 사이의 결정들." />
+  <meta property="og:title" content="hhee studio — 좋아서 만든 나의 취향" />
+  <meta property="og:description" content="좋아서 만든 나의 취향, 여기에서 살 수 있습니다. 결제는 네이버 스마트스토어에서." />
+
   <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- 종이 질감 오버레이 -->
   <div class="grain" aria-hidden="true"></div>
 
   <!-- ═══════════ 헤더 ═══════════ -->
-  <header class="header" id="header">
-    <a class="masthead" href="#top">
+  <header class="header scrolled" id="header">
+    <a class="masthead" href="index.html">
       <span class="masthead-main">hhee studio</span>
       <span class="masthead-sub">letter</span>
     </a>
     <nav class="header-nav">
-      <a href="#about" class="nav-link">소개</a>
+      <a href="newsletter.html" class="nav-link">레터</a>
       <a href="archive.html" class="nav-link">지난 편지</a>
-      <a href="#workshop" class="nav-link">워크숍</a>
-      <a href="shop.html" class="nav-link">가게</a>
-      <a href="#subscribe" class="btn-subscribe magnetic">구독하기</a>
+      <a href="index.html" class="nav-link">가게</a>
+      <a href="newsletter.html#subscribe" class="btn-subscribe magnetic">구독하기</a>
     </nav>
     <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="메뉴 열기">
       <span></span><span></span>
@@ -37,303 +36,140 @@
   </header>
 
   <div class="mobile-menu" id="mobile-menu">
-    <a href="#about">소개</a>
+    <a href="newsletter.html">레터</a>
     <a href="archive.html">지난 편지</a>
-    <a href="#workshop">워크숍</a>
-    <a href="shop.html">가게</a>
-    <a href="#subscribe">구독하기</a>
+    <a href="index.html">가게</a>
+    <a href="newsletter.html#subscribe">구독하기</a>
   </div>
 
-  <main id="top">
+  <main class="archive">
 
-    <!-- ═══════════ 히어로 ═══════════ -->
-    <section class="hero">
-      <div class="hero-meta">
-        <span class="hero-meta-item">제품 디자인 · 과정의 기록</span>
-        <span class="hero-meta-divider" aria-hidden="true"></span>
-        <span class="hero-meta-item">격주 금요일 발행</span>
-      </div>
+    <header class="archive-head">
+      <p class="section-index">( 가게 )</p>
+      <h1 class="archive-title">좋아서 만든 나의 취향<br />여기에서 살 수 있습니다</h1>
+      <p class="archive-lead">
+        편지에 쓰던 것들이 물건이 되면 여기에 올려둡니다.<br />
+        결제와 배송은 네이버 스마트스토어에서 안전하게 진행돼요.
+      </p>
+    </header>
 
-      <h1 class="hero-title" aria-label="좋아서 자꾸 들여다보고, 자꾸 만듭니다.">
-        <span class="line"><span class="line-inner">좋아서 자꾸</span></span>
-        <span class="line"><span class="line-inner">들여다보고,</span></span>
-        <span class="line"><span class="line-inner"><em>자꾸 만듭니다.</em></span></span>
-      </h1>
-
-      <div class="hero-bottom">
-        <p class="hero-sub">
-          완성된 물건 뒤에는 아직 정리되지 않은 시간이 있어요.<br />
-          그리고 만지고 다시 그리던, 제일 재미있는 시간 —<br />
-          그 <strong>재미있는 시간</strong>을 격주에 한 번 씁니다.
-        </p>
-        <div class="hero-now">
-          <span class="hero-now-label">요즘 들여다보는 것</span>
-          <span class="rotator" id="rotator">
-            <span class="rotator-word is-active">우리집 빈티지 의자의 다리</span>
-            <span class="rotator-word">자꾸 만지게 되는 문 손잡이</span>
-            <span class="rotator-word">괜히 쓸어보는 종이</span>
-            <span class="rotator-word">베란다 너머의 초록초록 잎들</span>
-          </span>
-        </div>
-      </div>
-
-      <!-- 블루프린트 오너먼트 -->
-      <svg class="hero-ornament" data-speed="-0.09" viewBox="0 0 320 320" fill="none" aria-hidden="true">
-        <circle cx="160" cy="160" r="150" stroke="currentColor" stroke-width="1" stroke-dasharray="4 7" class="orbit" />
-        <circle cx="160" cy="160" r="104" stroke="currentColor" stroke-width="1" opacity="0.5" />
-        <line x1="160" y1="10" x2="160" y2="46" stroke="currentColor" stroke-width="1" />
-        <line x1="160" y1="274" x2="160" y2="310" stroke="currentColor" stroke-width="1" />
-        <line x1="10" y1="160" x2="46" y2="160" stroke="currentColor" stroke-width="1" />
-        <line x1="274" y1="160" x2="310" y2="160" stroke="currentColor" stroke-width="1" />
-        <path d="M120 200 L120 128 L200 128 L200 200" stroke="currentColor" stroke-width="1.2" />
-        <line x1="108" y1="200" x2="212" y2="200" stroke="currentColor" stroke-width="1.2" />
-        <text x="160" y="230" text-anchor="middle" class="ornament-caption">fig.01 — process</text>
-      </svg>
-
-      <a class="scroll-cue" href="#about" aria-label="아래로 스크롤">
-        <span class="scroll-cue-line" aria-hidden="true"></span>
-        <span class="scroll-cue-text">스크롤</span>
-      </a>
-    </section>
-
-    <!-- ═══════════ 마키 ═══════════ -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span class="marquee-content">
-          과정 process&nbsp;&nbsp;·&nbsp;&nbsp;사물 object&nbsp;&nbsp;·&nbsp;&nbsp;기록 record&nbsp;&nbsp;·&nbsp;&nbsp;실패 failure&nbsp;&nbsp;·&nbsp;&nbsp;출처 source&nbsp;&nbsp;·&nbsp;&nbsp;
-        </span>
-        <span class="marquee-content">
-          과정 process&nbsp;&nbsp;·&nbsp;&nbsp;사물 object&nbsp;&nbsp;·&nbsp;&nbsp;기록 record&nbsp;&nbsp;·&nbsp;&nbsp;실패 failure&nbsp;&nbsp;·&nbsp;&nbsp;출처 source&nbsp;&nbsp;·&nbsp;&nbsp;
-        </span>
-      </div>
+    <!-- 카테고리 필터 -->
+    <div class="filter-bar" id="filter-bar" role="tablist" aria-label="상품 분류">
+      <button class="filter-chip is-active" data-filter="all">전체</button>
+      <button class="filter-chip" data-filter="clothes"><span class="chip-num">01</span> 의류</button>
+      <button class="filter-chip" data-filter="goods"><span class="chip-num">02</span> 소물 · 굿즈</button>
+      <button class="filter-chip" data-filter="digital"><span class="chip-num">03</span> 디지털</button>
     </div>
 
-    <!-- ═══════════ 매니페스토 ═══════════ -->
-    <section class="manifesto" id="about">
-      <p class="section-index reveal">( 01 — 왜 쓰냐면 )</p>
-      <div class="manifesto-body">
-        <p class="scrub-line">영감이라는 말, 좀 거창하죠.</p>
-        <p class="scrub-line">막상 뒤져보면 책상 위 사물이거나</p>
-        <p class="scrub-line">길에서 주운 장면이거나, 그런 것들입니다.</p>
-        <p class="scrub-line">놀랍도록 <em>구체적</em>이에요.</p>
-        <p class="scrub-line">그 작은 것들을 모아 격주에 한 번 씁니다.</p>
-      </div>
-    </section>
+    <!-- 상품 그리드 -->
+    <div class="archive-grid" id="archive-grid">
 
-    <!-- ═══════════ 장면 콜라주 ═══════════ -->
-    <section class="collage" aria-label="요즘의 장면들">
-      <p class="collage-label reveal">요즘의 장면들 — 2026 여름</p>
-
-      <div class="collage-grid">
-        <figure class="collage-item item-a">
-          <div class="collage-img">
-            <img src="https://images.unsplash.com/photo-1609648755431-51dcdb167aa2?q=80&w=1200&auto=format&fit=crop" alt="커다란 초록 잎 클로즈업" loading="lazy" />
-          </div>
-          <figcaption class="collage-caption">→ 베란다 너머의 초록</figcaption>
-        </figure>
-
-        <figure class="collage-item item-b">
-          <div class="collage-img">
-            <img src="https://images.unsplash.com/photo-1542621334-a254cf47733d?q=80&w=1000&auto=format&fit=crop" alt="연필과 자로 그린 작업지시서 도면" loading="lazy" />
-          </div>
-          <figcaption class="collage-caption">→ 스케치, 버전 셋</figcaption>
-        </figure>
-
-        <figure class="collage-item item-c">
-          <div class="collage-img">
-            <img src="https://images.unsplash.com/photo-1568363541766-ec619ecfa0ad?q=80&w=800&auto=format&fit=crop" alt="골목을 달리는 사람의 뒷모습" loading="lazy" />
-          </div>
-        </figure>
-
-        <figure class="collage-item item-d">
-          <div class="collage-img">
-            <img src="https://images.unsplash.com/photo-1498075702571-ecb018f3752d?q=80&w=800&auto=format&fit=crop" alt="작업 도구들" loading="lazy" />
-          </div>
-        </figure>
-
-        <figure class="collage-item item-e">
-          <div class="collage-img">
-            <img src="https://images.unsplash.com/photo-1753162661733-6c096fd089a6?q=80&w=1200&auto=format&fit=crop" alt="마네킹에 가봉하며 치수를 재는 손" loading="lazy" />
-          </div>
-          <figcaption class="collage-caption">→ 실루엣을 다시 맞추는 시간</figcaption>
-        </figure>
-
-        <span class="collage-word word-1" data-speed="-0.06" aria-hidden="true">만들며,</span>
-        <span class="collage-word word-2" data-speed="0.08" aria-hidden="true">#과정의기록</span>
-      </div>
-    </section>
-
-    <!-- ═══════════ 받게 되는 것 ═══════════ -->
-    <section class="contents-section">
-      <p class="section-index reveal">( 02 — 받게 되는 것 )</p>
-      <h2 class="section-title reveal">편지에<br />뭐가 들었냐면</h2>
-
-      <div class="content-list">
-        <a class="content-row reveal" href="archive.html#process">
-          <span class="content-num">01</span>
-          <div class="content-text">
-            <h3 class="content-name">과정 노트</h3>
-            <p class="content-desc">지금 만들고 있는 것의 스케치와 시행착오. 정리되기 전의 생생한 상태로 보냅니다.</p>
-          </div>
-          <span class="content-arrow" aria-hidden="true">→</span>
-        </a>
-        <a class="content-row reveal" href="archive.html#source">
-          <span class="content-num">02</span>
-          <div class="content-text">
-            <h3 class="content-name">아이디어의 출처</h3>
-            <p class="content-desc">이번에 저를 붙잡은 사물과 장면 셋. 어디서 왔는지, 뭘 남겼는지.</p>
-          </div>
-          <span class="content-arrow" aria-hidden="true">→</span>
-        </a>
-        <a class="content-row reveal" href="archive.html#fail">
-          <span class="content-num">03</span>
-          <div class="content-text">
-            <h3 class="content-name">실패의 기록</h3>
-            <p class="content-desc">버린 시안과, 버린 이유. 돌아보면 그 시안들이 다음을 만들었어요.</p>
-          </div>
-          <span class="content-arrow" aria-hidden="true">→</span>
-        </a>
-        <a class="content-row reveal" href="archive.html#tool">
-          <span class="content-num">04</span>
-          <div class="content-text">
-            <h3 class="content-name">도구와 방법</h3>
-            <p class="content-desc">실제로 쓰는 도구와 파일 정리법, 작업 루틴. 내일 바로 따라 할 수 있게.</p>
-          </div>
-          <span class="content-arrow" aria-hidden="true">→</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- ═══════════ 지난 편지 ═══════════ -->
-    <section class="letters" id="letters">
-      <p class="section-index reveal">( 03 — 지난 편지 )</p>
-      <h2 class="section-title reveal">그동안<br />이런 걸 보냈어요</h2>
-
-      <div class="letter-grid">
-        <a class="letter-card reveal" href="letter.html">
-          <div class="letter-visual">
-            <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
-              <line x1="60" y1="34" x2="140" y2="34" stroke="currentColor" stroke-width="1.5"/>
-              <line x1="76" y1="34" x2="76" y2="52" stroke="currentColor" stroke-width="1.5"/>
-              <line x1="124" y1="34" x2="124" y2="52" stroke="currentColor" stroke-width="1.5"/>
-              <rect x="52" y="52" width="96" height="64" rx="3" stroke="currentColor" stroke-width="1.5"/>
-              <path d="M70 74 L130 74 M70 90 L112 90" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
-              <path d="M148 108 L156 116" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
-            </svg>
-            <span class="letter-tag">#아이디어의출처</span>
-          </div>
-          <div class="letter-info">
-            <span class="letter-vol">Vol. 01 — 아이디어의 출처</span>
-            <h3 class="letter-title">아이디어가<br />시작되는 순간</h3>
-          </div>
-        </a>
-
-        <a class="letter-card reveal" href="letter-02.html">
-          <div class="letter-visual">
-            <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
-              <rect x="64" y="32" width="76" height="96" rx="5" stroke="currentColor" stroke-width="1.5"/>
-              <circle cx="64" cy="48" r="4" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
-              <circle cx="64" cy="66" r="4" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
-              <circle cx="64" cy="84" r="4" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
-              <circle cx="64" cy="102" r="4" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
-              <path d="M80 56 L126 56 M80 72 L118 72" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
-              <path d="M80 96 Q88 88 96 96 T112 96 T128 96" stroke="currentColor" stroke-width="1.3" opacity="0.8"/>
-              <path d="M80 112 L100 112" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
-            </svg>
-            <span class="letter-tag">#과정노트</span>
-          </div>
-          <div class="letter-info">
-            <span class="letter-vol">Vol. 02 — 과정 노트</span>
-            <h3 class="letter-title">노트의<br />끄적임</h3>
-          </div>
-        </a>
-
-        <a class="letter-card reveal" href="letter-03.html">
-          <div class="letter-visual">
-            <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
-              <path d="M100 52 L100 44 Q100 34 108 34 Q116 34 116 41" stroke="currentColor" stroke-width="1.5"/>
-              <path d="M100 52 L52 90 Q48 94 52 97 L148 97 Q152 94 148 90 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-              <path d="M78 97 L78 122 M122 97 L122 122" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
-              <path d="M78 122 Q100 132 122 122" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
-            </svg>
-            <span class="letter-tag">#아이디어의출처</span>
-          </div>
-          <div class="letter-info">
-            <span class="letter-vol">Vol. 03 — 아이디어의 출처</span>
-            <h3 class="letter-title">레퍼런스는<br />어디에도 있다</h3>
-          </div>
-        </a>
-      </div>
-
-      <a class="letters-all reveal" href="archive.html">지난 편지 전체 보기 →</a>
-    </section>
-
-    <!-- ═══════════ 워크숍 ═══════════ -->
-    <section class="contents-section" id="workshop">
-      <p class="section-index reveal">( 04 — 워크숍 )</p>
-      <h2 class="section-title reveal">같이 들여다볼<br />사람을 찾아요</h2>
-
-      <p class="workshop-lead reveal">
-        편지는 아무래도 저 혼자 떠드는 쪽이라서요.<br />
-        가르치는 자리 말고, 각자의 취향과 과정을 꺼내놓는 모임을 열려고 합니다.<br />
-        하나의 사물을 정해 두 번에 나눠 만나요.
-      </p>
-
-      <ul class="content-list">
-        <li class="content-row reveal">
-          <span class="content-num">01</span>
-          <div class="content-text">
-            <h3 class="content-name">취향 이야기</h3>
-            <p class="content-desc">각자 좋아하는 물건을 하나씩 들고 옵니다. 왜 그게 좋은지 말해보는 자리예요.</p>
-          </div>
-          <span class="content-arrow" aria-hidden="true">→</span>
-        </li>
-        <li class="content-row reveal">
-          <span class="content-num">02</span>
-          <div class="content-text">
-            <h3 class="content-name">과정 이야기</h3>
-            <p class="content-desc">그 물건이 어떻게 만들어졌는지 같이 뜯어봅니다. 만드는 사람의 결정을 되짚는 시간.</p>
-          </div>
-          <span class="content-arrow" aria-hidden="true">→</span>
-        </li>
-      </ul>
-
-      <p class="workshop-note reveal">
-        아직 준비 중이에요. 자리가 잡히면 편지로 가장 먼저 알려드립니다.
-      </p>
-    </section>
-
-    <!-- ═══════════ 구독 ═══════════ -->
-    <section class="subscribe" id="subscribe">
-      <p class="section-index reveal">( 05 — 구독 )</p>
-      <h2 class="subscribe-title reveal">
-        한 달에 두 번,<br />메일함에서 <em>만나요.</em>
-      </h2>
-
-      <form class="subscribe-form reveal" id="subscribe-form" novalidate>
-        <div class="field">
-          <input type="email" id="email" name="email" placeholder="이메일 주소" autocomplete="email" required />
-          <span class="field-line" aria-hidden="true"></span>
+      <a class="archive-card shop-card reveal" data-tag="clothes" href="https://smartstore.naver.com/" target="_blank" rel="noopener">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <path d="M78 38 L60 48 L44 78 L60 88 L64 76 L64 128 L136 128 L136 76 L140 88 L156 78 L140 48 L122 38 Q100 52 78 38 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M86 40 Q100 50 114 40" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+          </svg>
+          <span class="archive-tag">#의류</span>
         </div>
-        <button type="submit" class="btn-submit magnetic">
-          <span class="btn-submit-label">편지 받기</span>
-          <span class="btn-submit-arrow" aria-hidden="true">→</span>
-        </button>
-      </form>
+        <div class="archive-info">
+          <span class="archive-vol">의류 · 예시 상품</span>
+          <h2 class="archive-name">구름색 라운드 티</h2>
+          <span class="archive-more">스마트스토어에서 구매 →</span>
+        </div>
+      </a>
 
-      <div class="subscribe-done" id="subscribe-done" hidden>
-        <svg class="done-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-          <circle cx="32" cy="32" r="29" stroke="currentColor" stroke-width="1.5" class="done-circle"/>
-          <path d="M20 33 L28.5 41.5 L45 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="done-check"/>
-        </svg>
-        <p class="done-title">환영합니다.</p>
-        <p class="done-sub">다음 격주 금요일, 첫 편지에서 만나요.</p>
-      </div>
+      <a class="archive-card shop-card reveal" data-tag="clothes" href="https://smartstore.naver.com/" target="_blank" rel="noopener">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <path d="M80 36 L58 46 L48 76 L62 84 L66 72 L66 130 L134 130 L134 72 L138 84 L152 76 L142 46 L120 36 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M100 40 L100 126" stroke="currentColor" stroke-width="1.3"/>
+            <circle cx="100" cy="66" r="5" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M100 71 L100 80" stroke="currentColor" stroke-width="1.3"/>
+          </svg>
+          <span class="archive-tag">#의류</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">의류 · 예시 상품</span>
+          <h2 class="archive-name">지퍼가 쉬운 아우터</h2>
+          <span class="archive-more">스마트스토어에서 구매 →</span>
+        </div>
+      </a>
 
-      <p class="subscribe-note reveal">
-        스팸은 없어요. 편지가 가끔 뜸해질 수는 있어도, 주소를 팔지는 않습니다.
-      </p>
-    </section>
+      <a class="archive-card shop-card reveal" data-tag="goods" href="https://smartstore.naver.com/" target="_blank" rel="noopener">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <rect x="64" y="32" width="76" height="96" rx="5" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="64" cy="48" r="4" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+            <circle cx="64" cy="66" r="4" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+            <circle cx="64" cy="84" r="4" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+            <circle cx="64" cy="102" r="4" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+            <path d="M80 60 L124 60 M80 76 L118 76 M80 92 Q88 84 96 92 T112 92" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+          </svg>
+          <span class="archive-tag">#소물굿즈</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">소물 · 예시 상품</span>
+          <h2 class="archive-name">과정 노트 (제본판)</h2>
+          <span class="archive-more">스마트스토어에서 구매 →</span>
+        </div>
+      </a>
+
+      <a class="archive-card shop-card reveal" data-tag="goods" href="https://smartstore.naver.com/" target="_blank" rel="noopener">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <circle cx="100" cy="56" r="18" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M100 74 L100 84" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M84 84 L116 84 L112 126 L88 126 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M92 96 L108 96" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+          </svg>
+          <span class="archive-tag">#소물굿즈</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">소물 · 예시 상품</span>
+          <h2 class="archive-name">바늘땀 키링</h2>
+          <span class="archive-more">스마트스토어에서 구매 →</span>
+        </div>
+      </a>
+
+      <a class="archive-card shop-card reveal" data-tag="digital" href="https://smartstore.naver.com/" target="_blank" rel="noopener">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <rect x="52" y="48" width="44" height="60" rx="3" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="78" y="40" width="44" height="60" rx="3" stroke="currentColor" stroke-width="1.5" opacity="0.75"/>
+            <rect x="104" y="32" width="44" height="60" rx="3" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+            <path d="M60 120 L140 120" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 5" opacity="0.5"/>
+          </svg>
+          <span class="archive-tag">#디지털</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">디지털 · 예시 상품</span>
+          <h2 class="archive-name">시즌 컬러 팔레트 PDF</h2>
+          <span class="archive-more">스마트스토어에서 구매 →</span>
+        </div>
+      </a>
+
+      <a class="archive-card shop-card reveal" data-tag="digital" href="https://smartstore.naver.com/" target="_blank" rel="noopener">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <path d="M52 56 Q52 48 60 48 L88 48 L96 58 L140 58 Q148 58 148 66 L148 112 Q148 120 140 120 L60 120 Q52 120 52 112 Z" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M68 88 L132 88 M68 100 L116 100" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+          </svg>
+          <span class="archive-tag">#디지털</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">디지털 · 예시 상품</span>
+          <h2 class="archive-name">작업 파일 정리 템플릿</h2>
+          <span class="archive-more">스마트스토어에서 구매 →</span>
+        </div>
+      </a>
+
+      <p class="archive-empty" id="archive-empty" hidden>이 분류의 상품이 아직 없어요. 곧 채워질 예정입니다.</p>
+    </div>
+
+    <p class="shop-note reveal">
+      상품을 누르면 네이버 스마트스토어로 이동합니다. 결제·배송·교환 문의는 스토어 톡톡으로 받아요.
+    </p>
 
   </main>
 

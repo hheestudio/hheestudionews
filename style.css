@@ -242,8 +242,8 @@ em {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 18% 45%;
-  transform-origin: 18% 45%;
+  object-position: 0% 45%;
+  transform-origin: 0% 45%;
   animation: hero-kenburns 26s ease-in-out infinite alternate;
 }
 .hero-bg::after {
@@ -254,7 +254,7 @@ em {
 }
 @keyframes hero-kenburns {
   from { transform: scale(1.02) translate(0, 0); }
-  to   { transform: scale(1.11) translate(1.4%, -1.2%); }
+  to   { transform: scale(1.11) translate(-0.8%, -1.2%); }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-bg img { animation: none; }

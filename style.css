@@ -205,6 +205,7 @@ em {
 .mobile-menu.is-open a:nth-child(2) { transition-delay: 0.22s; }
 .mobile-menu.is-open a:nth-child(3) { transition-delay: 0.29s; }
 .mobile-menu.is-open a:nth-child(4) { transition-delay: 0.36s; }
+.mobile-menu.is-open a:nth-child(5) { transition-delay: 0.43s; }
 .mobile-menu.is-open a:last-child { color: var(--accent); }
 
 /* ── 읽기 진행 바 ──────────────────────── */
@@ -1199,6 +1200,13 @@ a.content-row {
   transition: color 0.3s;
 }
 .archive-card:hover .archive-more { color: var(--accent); }
+.shop-note {
+  text-align: center;
+  font-size: 0.84rem;
+  color: var(--ink-soft);
+  padding: 0 var(--gutter) clamp(70px, 10vh, 120px);
+}
+
 .archive-empty {
   text-align: center;
   color: var(--ink-soft);

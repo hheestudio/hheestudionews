@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>가게 — hhee studio letter</title>
+  <meta name="description" content="좋아서 만든 나의 취향, 여기에서 살 수 있습니다. 편지에 쓰던 것들이 물건이 되면 여기에 올려둡니다. 결제는 네이버 스마트스토어에서." />
+  <link rel="canonical" href="https://studiohhee.com/shop.html" />
+  <meta property="og:url" content="https://studiohhee.com/shop.html" />
+  <meta property="og:title" content="가게 — hhee studio letter" />
+  <meta property="og:description" content="좋아서 만든 나의 취향, 여기에서 살 수 있습니다. 결제는 네이버 스마트스토어에서." />
+
+  <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ═══════════ 헤더 ═══════════ -->
+  <header class="header scrolled" id="header">
+    <a class="masthead" href="index.html">
+      <span class="masthead-main">hhee studio</span>
+      <span class="masthead-sub">letter</span>
+    </a>
+    <nav class="header-nav">
+      <a href="index.html#about" class="nav-link">소개</a>
+      <a href="archive.html" class="nav-link">지난 편지</a>
+      <a href="shop.html" class="nav-link">가게</a>
+      <a href="index.html#subscribe" class="btn-subscribe magnetic">구독하기</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="메뉴 열기">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html#about">소개</a>
+    <a href="archive.html">지난 편지</a>
+    <a href="shop.html">가게</a>
+    <a href="index.html#subscribe">구독하기</a>
+  </div>
+
+  <main class="archive">
+
+    <header class="archive-head">
+      <p class="section-index">( 가게 )</p>
+      <h1 class="archive-title">좋아서 만든 나의 취향<br />여기에서 살 수 있습니다</h1>
+      <p class="archive-lead">
+        편지에 쓰던 것들이 물건이 되면 여기에 올려둡니다.<br />
+        결제와 배송은 네이버 스마트스토어에서 안전하게 진행돼요.
+      </p>
+    </header>
+
+    <!-- 카테고리 필터 -->
+    <div class="filter-bar" id="filter-bar" role="tablist" aria-label="상품 분류">
+      <button class="filter-chip is-active" data-filter="all">전체</button>
+      <button class="filter-chip" data-filter="clothes"><span class="chip-num">01</span> 의류</button>
+      <button class="filter-chip" data-filter="goods"><span class="chip-num">02</span> 소물 · 굿즈</button>
+      <button class="filter-chip" data-filter="digital"><span class="chip-num">03</span> 디지털</button>
+    </div>
+
+    <!-- 상품 그리드 -->
+    <div class="archive-grid" id="archive-grid">
+
+      <a class="archive-card shop-card reveal" data-tag="clothes" href="https://smartstore.naver.com/" target="_blank" rel="noopener">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <path d="M78 38 L60 48 L44 78 L60 88 L64 76 L64 128 L136 128 L136 76 L140 88 L156 78 L140 48 L122 38 Q100 52 78 38 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M86 40 Q100 50 114 40" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+          </svg>
+          <span class="archive-tag">#의류</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">의류 · 예시 상품</span>
+          <h2 class="archive-name">구름색 라운드 티</h2>
+          <span class="archive-more">스마트스토어에서 구매 →</span>
+        </div>
+      </a>
+
+      <a class="archive-card shop-card reveal" data-tag="clothes" href="https://smartstore.naver.com/" target="_blank" rel="noopener">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <path d="M80 36 L58 46 L48 76 L62 84 L66 72 L66 130 L134 130 L134 72 L138 84 L152 76 L142 46 L120 36 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M100 40 L100 126" stroke="currentColor" stroke-width="1.3"/>
+            <circle cx="100" cy="66" r="5" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M100 71 L100 80" stroke="currentColor" stroke-width="1.3"/>
+          </svg>
+          <span class="archive-tag">#의류</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">의류 · 예시 상품</span>
+          <h2 class="archive-name">지퍼가 쉬운 아우터</h2>
+          <span class="archive-more">스마트스토어에서 구매 →</span>
+        </div>
+      </a>
+
+      <a class="archive-card shop-card reveal" data-tag="goods" href="https://smartstore.naver.com/" target="_blank" rel="noopener">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <rect x="64" y="32" width="76" height="96" rx="5" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="64" cy="48" r="4" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+            <circle cx="64" cy="66" r="4" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+            <circle cx="64" cy="84" r="4" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+            <circle cx="64" cy="102" r="4" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+            <path d="M80 60 L124 60 M80 76 L118 76 M80 92 Q88 84 96 92 T112 92" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+          </svg>
+          <span class="archive-tag">#소물굿즈</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">소물 · 예시 상품</span>
+          <h2 class="archive-name">과정 노트 (제본판)</h2>
+          <span class="archive-more">스마트스토어에서 구매 →</span>
+        </div>
+      </a>
+
+      <a class="archive-card shop-card reveal" data-tag="goods" href="https://smartstore.naver.com/" target="_blank" rel="noopener">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <circle cx="100" cy="56" r="18" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M100 74 L100 84" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M84 84 L116 84 L112 126 L88 126 Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M92 96 L108 96" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+          </svg>
+          <span class="archive-tag">#소물굿즈</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">소물 · 예시 상품</span>
+          <h2 class="archive-name">바늘땀 키링</h2>
+          <span class="archive-more">스마트스토어에서 구매 →</span>
+        </div>
+      </a>
+
+      <a class="archive-card shop-card reveal" data-tag="digital" href="https://smartstore.naver.com/" target="_blank" rel="noopener">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <rect x="52" y="48" width="44" height="60" rx="3" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="78" y="40" width="44" height="60" rx="3" stroke="currentColor" stroke-width="1.5" opacity="0.75"/>
+            <rect x="104" y="32" width="44" height="60" rx="3" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+            <path d="M60 120 L140 120" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 5" opacity="0.5"/>
+          </svg>
+          <span class="archive-tag">#디지털</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">디지털 · 예시 상품</span>
+          <h2 class="archive-name">시즌 컬러 팔레트 PDF</h2>
+          <span class="archive-more">스마트스토어에서 구매 →</span>
+        </div>
+      </a>
+
+      <a class="archive-card shop-card reveal" data-tag="digital" href="https://smartstore.naver.com/" target="_blank" rel="noopener">
+        <div class="archive-visual">
+          <svg viewBox="0 0 200 160" fill="none" aria-hidden="true">
+            <path d="M52 56 Q52 48 60 48 L88 48 L96 58 L140 58 Q148 58 148 66 L148 112 Q148 120 140 120 L60 120 Q52 120 52 112 Z" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M68 88 L132 88 M68 100 L116 100" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+          </svg>
+          <span class="archive-tag">#디지털</span>
+        </div>
+        <div class="archive-info">
+          <span class="archive-vol">디지털 · 예시 상품</span>
+          <h2 class="archive-name">작업 파일 정리 템플릿</h2>
+          <span class="archive-more">스마트스토어에서 구매 →</span>
+        </div>
+      </a>
+
+      <p class="archive-empty" id="archive-empty" hidden>이 분류의 상품이 아직 없어요. 곧 채워질 예정입니다.</p>
+    </div>
+
+    <p class="shop-note reveal">
+      상품을 누르면 네이버 스마트스토어로 이동합니다. 결제·배송·교환 문의는 스토어 톡톡으로 받아요.
+    </p>
+
+  </main>
+
+  <!-- ═══════════ 푸터 ═══════════ -->
+  <footer class="footer">
+    <p class="footer-big" aria-hidden="true">hhee studio</p>
+    <div class="footer-row">
+      <span>물건과 과정 사이 어딘가에서.</span>
+      <span>© 2026 hhee studio</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
